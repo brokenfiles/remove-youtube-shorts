@@ -1,0 +1,17 @@
+{
+  "name": "Remove youtube shorts",
+  "description": "Prevents the access on Youtube Shorts.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/",
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "inject.js"
+      ]
+    }
+  ]
+}
